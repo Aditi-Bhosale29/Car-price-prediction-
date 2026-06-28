@@ -4,7 +4,7 @@ import pandas as pd
 import pickle
 
 st.title("Car Price Prediction App")
-df = pd.read_csv("final_data.csv")
+df = pd.read_csv("Final_data.csv")
 model = pickle.load(open("model.pkl", "rb"))
 
 companies = sorted(df['company'].unique())
